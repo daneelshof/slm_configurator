@@ -1,0 +1,563 @@
+<html>
+<head>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="stylesheets/main.css" rel="stylesheet" type="text/css" media="screen,projection"/> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".button-collapse").sideNav();
+    $("#hs_button").click(function(){
+      $("li").hide();
+      $(".hs").fadeIn();
+    });
+    $("#he_button").click(function(){
+      $("li").hide();
+      $(".he").fadeIn();
+    });
+    $("#r_button").click(function(){
+      $("li").hide();
+      $(".r").fadeIn();
+    });
+    $("#t_button").click(function(){
+      $("li").hide();
+      $(".t").fadeIn();
+    });
+  });
+  </script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<nav class="top-nav light-blue lighten-3" role="navigation">
+  <div class="nav-wrapper center">
+    <a class="page-title">Spatial Light Modulators</a>
+    <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
+      <i class="material-icons">menu</i>
+    </a>
+  </div>
+  
+  <ul id="nav-mobile" class="side-nav fixed">
+    <li><a href="#" class="center"><object id="front-page-logo" type="image/svg+xml" data="images/mlo_bird.svg"></object></a></li>
+    <li><a href="#">High Efficiency</a></li>
+    <li><a href="#">High Speed</a></li>
+    <li><a href="#">Low Phase Ripple</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+<div class="section no-pad-bot" id="main">
+<div class="row" id="slm-list">
+  <div class="col s12 m12 l12">
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">P1920-HDMI</span>
+        <p>Reflective 1920x1152 SLM featuring high fill factor and HDMI controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>30 - 100 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>88%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>9.2 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>17.66 x 10.60 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">HSP512L-DVI</span>
+        <p>Reflective 512x512 large area SLM featuring High Speed liquid crystal and High Speed DVI controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>2 - 15 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>88%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>25 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>12.80 x 12.80 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">P512L-DVI</span>
+        <p>Reflective 512x512 large area SLM featuring a DVI controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>2 - 15 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>88%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>25 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>12.80 x 12.80 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">ODP512-P8</span>
+        <p>Reflective 512x512 SLM featuring OverDrive Plus and PCIe 8-bit controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>1.5 - 7 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">HSP512-P8</span>
+        <p>Reflective 512x512 SLM featuring High Speed liquid crystal and PCIe 8-bit controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">HSP512-P16</span>
+        <p>Reflective 512x512 SLM featuring High Speed liquid crystal and PCIe 16-bit controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">HSP512-DVI</span>
+        <p>Reflective 512x512 SLM featuring High Speed liquid crystal and High Speed DVI controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">HSPDM512-P8</span>
+        <p>Reflective 512x512 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and PCIe 8-bit controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">HSPDM512-P16</span>
+        <p>Reflective 512x512 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and PCIe 16-bit controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">HSPDM512-DVI</span>
+        <p>Reflective 512x512 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and High Speed DVI controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">PDM512-P8</span>
+        <p>Reflective 512x512 SLM featuring a High Efficiency dielectric mirror and PCIe 8-bit controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">PDM512-P16</span>
+        <p>Reflective 512x512 SLM featuring a High Efficiency dielectric mirror and PCIe 16-bit controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">PDM512-DVI</span>
+        <p>Reflective 512x512 SLM featuring a High Efficiency dielectric mirror and DVI controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">P512-P8</span>
+        <p>Reflective 512x512 SLM featuring a 8-bit controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">P512-P16</span>
+        <p>Reflective 512x512 SLM featuring a PCIe 16-bit controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">P512-DVI</span>
+        <p>Reflective 512x512 SLM featuring a DVI controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>61.5%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>15 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">HSP12K-P16</span>
+        <p>Reflective 1x12,288 SLM featuring High Speed liquid crystal and a P16 controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 30 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>80%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>1.6 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>19.66 x 19.66 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">HSPDM12K-P16</span>
+        <p>Reflective 1x12,288 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and a P16 controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 30 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>80 - 95%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>1.6 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>19.66 x 19.66 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">PDM12K-P16</span>
+        <p>Reflective 1x12,288 SLM featuring a High Efficiency dielectric mirror and a P16 controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 30 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>80 - 95%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>1.6 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>19.66 x 19.66 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">P12K-P16</span>
+        <p>Reflective 1x12,288 SLM featuring a P16 controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>5 - 30 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">call_missed</i><p>80%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>1.6 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>19.66 x 19.66 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">1x128</span>
+        <p>Transmissive 1x128 SLM featuring phase, amplitude or combined modulation and a USB controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>35- 70 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">import_export</i><p>85 - 92%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>100 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>12.80 x 5.00 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">1x640</span>
+        <p>Transmissive 1x640 SLM featuring phase, amplitude or combined modulation and a USB controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>35- 70 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">import_export</i><p>85 - 92%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>100 microns</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>64.00 x 5.00 mm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title">Hex</span>
+        <p>Transmissive 127 hexagonal pixel SLM featuring a USB controller.</p>
+        <div class="card-action">
+          <div class="row">
+            <div class="col s3 m3 l3">
+              <i class="material-icons">timelapse</i><p>35- 70 ms</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">import_export</i><p>>90%</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">grid_on</i><p>1 millimeter</p>
+            </div>
+            <div class="col s3 m3 l3">
+              <i class="material-icons">aspect_ratio</i><p>12.00 mm diameter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div>
+</div>
+</div>
+</body>
+</html>

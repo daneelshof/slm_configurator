@@ -1,0 +1,33 @@
+// Modules and Variables
+@import "partials/base";
+@import "modules/colors";
+@import "materialize";
+
+.nav-wrapper .button-collapse {
+  margin-left: 5%;
+}
+
+.container {
+  width: 90%;
+}
+
+@media screen and (max-width: 991px) {
+  .nav-wrapper .page-title {
+    margin-left: -5%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  #slm-list {
+    margin-left: 240px;
+  }
+}
+
+#front-page-logo {
+  margin-top: 5px;
+  height: 50px;
+}
+
+.page-title {
+  font-size: 24px;
+}
