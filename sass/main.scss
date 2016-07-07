@@ -18,16 +18,25 @@
 }
 
 @media screen and (min-width: 992px){
-  #slm-list {
+  #main {
+    margin-left: 240px;
+  }
+  .page-title {
     margin-left: 240px;
   }
 }
 
 #front-page-logo {
-  margin-top: 5px;
-  height: 50px;
+  margin-top: 18px;
+  margin-left: -15px;
+  height: 25px;
 }
 
 .page-title {
   font-size: 24px;
+}
+
+a.breadcrumb {
+  vertical-align: center;
+  line-height: 64px;
 }

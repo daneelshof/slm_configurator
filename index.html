@@ -6,22 +6,98 @@
   <script type="text/javascript" src="js/bin/materialize.min.js"></script>
   <script>
   $(document).ready(function(){
+    var slm_filter = '';
+    cards = $('.slm');
+    $(".breadcrumb").hide();
+    $("#bcall").fadeIn();
+    
     $(".button-collapse").sideNav();
-    $("#hs_button").click(function(){
-      $("li").hide();
-      $(".hs").fadeIn();
+    $("#reflective").click(function(){
+      slm_filter = slm_filter.concat('.rslm');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bcrslm").fadeIn();
+      $("#reflective").hide();
+      $("#transmissive").hide();
     });
-    $("#he_button").click(function(){
-      $("li").hide();
-      $(".he").fadeIn();
+    $("#transmissive").click(function(){
+      slm_filter = slm_filter.concat('.tslm');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bctslm").fadeIn();
+      $("#reflective").hide();
+      $("#transmissive").hide();
     });
-    $("#r_button").click(function(){
-      $("li").hide();
-      $(".r").fadeIn();
+    $("#onedim").click(function(){
+      slm_filter = slm_filter.concat('.onedim');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bconedim").fadeIn();
+      $("#onedim").hide();
+      $("#twodim").hide();
     });
-    $("#t_button").click(function(){
-      $("li").hide();
-      $(".t").fadeIn();
+    $("#twodim").click(function(){
+      slm_filter = slm_filter.concat('.twodim');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bctwodim").fadeIn();
+      $("#onedim").hide();
+      $("#twodim").hide();
+    });
+    $("#hs").click(function(){
+      slm_filter = slm_filter.concat('.hs');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bchspd").fadeIn();
+      $("#hs").hide();
+      $("#uhs").hide();
+      $("#ulr").hide();
+      $("#transmissive").hide();
+    });
+    $("#uhs").click(function(){
+      slm_filter = slm_filter.concat('.uhs');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bcuhspd").fadeIn();
+      $("#hs").hide();
+      $("#uhs").hide();
+      $("#ulr").hide();
+      $("#onedim").hide();
+      $("#transmissive").hide();
+    });
+    $("#eff8").click(function(){
+      slm_filter = slm_filter.concat('.eff8');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bceff8").fadeIn();
+      $("#transmissive").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+    });
+    $("#eff9").click(function(){
+      slm_filter = slm_filter.concat('.eff9');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bceff9").fadeIn();
+      $("#transmissive").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+    });
+    $("#ulr").click(function(){
+      slm_filter = slm_filter.concat('.ulr');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bculpr").fadeIn();
+      $("#transmissive").hide();
+      $("#hs").hide();
+      $("#uhs").hide();
+    });
+    $("#bcall").click(function(){
+      slm_filter = '';
+      $(".breadcrumb").hide();
+      $("#bcall").fadeIn();
+      cards.fadeIn();
+      $("#nav-mobile li a").show();
     });
   });
   </script>
@@ -37,19 +113,97 @@
     </a>
   </div>
   
-  <ul id="nav-mobile" class="side-nav fixed">
-    <li><a href="#" class="center"><object id="front-page-logo" type="image/svg+xml" data="images/mlo_bird.svg"></object></a></li>
-    <li><a href="#">High Efficiency</a></li>
-    <li><a href="#">High Speed</a></li>
-    <li><a href="#">Low Phase Ripple</a></li>
+  <div id="nav-mobile" class="side-nav fixed">
+    <a href="#" class="center"><object id="front-page-logo" type="image/svg+xml" data="images/mlo.svg"></object></a>
+  <ul>
+    <li>
+      <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header waves-effect waves-red">SLM Type<i class="material-icons">filter_list</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!" id="reflective">Reflective</a></li>
+                <li><a href="#!" id="transmissive">Transmissive</a></li>
+                <li><a href="#!" id="onedim" >1D Pixel Array</a></li>
+                <li><a href="#!" id="twodim">2D Pixel Array</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+    </li>
+    <li>
+      <ul class="collapsible collapsible-accordion" id="responsetime">
+          <li>
+            <a class="collapsible-header waves-effect waves-red">Response Time<i class="material-icons">timelapse</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!" id="hs">High Speed</a></li>
+                <li><a href="#!" id="uhs">Ultra High Speed</a></li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header waves-effect waves-red">Efficiency<i class="material-icons">call_missed</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!" id="eff8">> 80%</a></li>
+                <li><a href="#!" id="eff9">> 90%</a></li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header waves-effect waves-red">Phase Stability<i class="material-icons">show_chart</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!" id="ulr">Ultra Low Phase Ripple</a></li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </li>
   </ul>
+  </div>
 </nav>
 
+
+
 <div class="container">
+
 <div class="section no-pad-bot" id="main">
+
+<div class="nav-wrapper">
+<div class="col s12">
+  <div class="card light-blue">
+  <div class="card-content">
+    <a href="#!" class="breadcrumb" id="bcall">All</a>
+    <a href="#!" class="breadcrumb" id="bcrslm">Reflective</a>
+    <a href="#!" class="breadcrumb" id="bctslm">Transmissive</a>
+    <a href="#!" class="breadcrumb" id="bconedim">1D</a>
+    <a href="#!" class="breadcrumb" id="bctwodim">2D</a>
+    <a href="#!" class="breadcrumb" id="bcstdspd">Standard Speed</a>
+    <a href="#!" class="breadcrumb" id="bchspd">High Speed</a>
+    <a href="#!" class="breadcrumb" id="bcuhspd">Ultra High Speed</a>
+    <a href="#!" class="breadcrumb" id="bcstdeff">Standard Efficiency</a>
+    <a href="#!" class="breadcrumb" id="bceff8">Efficiency > 80%</a>
+    <a href="#!" class="breadcrumb" id="bceff9">Efficiency > 90%</a>
+    <a href="#!" class="breadcrumb" id="bclpr">Low Phase Ripple</a>
+    <a href="#!" class="breadcrumb" id="bculpr">Ultra Low Phase Ripple</a>
+  </div>
+  </div>
+</div>
+</div>
+
 <div class="row" id="slm-list">
   <div class="col s12 m12 l12">
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm eff8 twodim">
       <div class="card-content">
         <span class="card-title">P1920-HDMI</span>
         <p>Reflective 1920x1152 SLM featuring high fill factor and HDMI controller.</p>
@@ -71,7 +225,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm eff8 twodim hs">
       <div class="card-content">
         <span class="card-title">HSP512L-DVI</span>
         <p>Reflective 512x512 large area SLM featuring High Speed liquid crystal and High Speed DVI controller.</p>
@@ -93,7 +247,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim eff8 ulr">
       <div class="card-content">
         <span class="card-title">P512L-DVI</span>
         <p>Reflective 512x512 large area SLM featuring a DVI controller.</p>
@@ -115,10 +269,10 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim uhs">
       <div class="card-content">
         <span class="card-title">ODP512-P8</span>
-        <p>Reflective 512x512 SLM featuring OverDrive Plus and PCIe 8-bit controller.</p>
+        <p>Reflective 512x512 SLM featuring OverDrive Plus, High Speed liquid crystal and PCIe 8-bit controller.</p>
         <div class="card-action">
           <div class="row">
             <div class="col s3 m3 l3">
@@ -137,7 +291,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim hs">
       <div class="card-content">
         <span class="card-title">HSP512-P8</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal and PCIe 8-bit controller.</p>
@@ -159,7 +313,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim hs">
       <div class="card-content">
         <span class="card-title">HSP512-P16</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal and PCIe 16-bit controller.</p>
@@ -181,7 +335,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim hs">
       <div class="card-content">
         <span class="card-title">HSP512-DVI</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal and High Speed DVI controller.</p>
@@ -203,7 +357,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim eff8 eff9 hs">
       <div class="card-content">
         <span class="card-title">HSPDM512-P8</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and PCIe 8-bit controller.</p>
@@ -225,7 +379,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim eff8 eff9 hs">
       <div class="card-content">
         <span class="card-title">HSPDM512-P16</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and PCIe 16-bit controller.</p>
@@ -247,7 +401,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim eff8 eff9 hs">
       <div class="card-content">
         <span class="card-title">HSPDM512-DVI</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and High Speed DVI controller.</p>
@@ -269,7 +423,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim eff8 eff9 ulr">
       <div class="card-content">
         <span class="card-title">PDM512-P8</span>
         <p>Reflective 512x512 SLM featuring a High Efficiency dielectric mirror and PCIe 8-bit controller.</p>
@@ -291,7 +445,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim eff8 eff9 ulr">
       <div class="card-content">
         <span class="card-title">PDM512-P16</span>
         <p>Reflective 512x512 SLM featuring a High Efficiency dielectric mirror and PCIe 16-bit controller.</p>
@@ -313,7 +467,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim eff8 eff9 ulr">
       <div class="card-content">
         <span class="card-title">PDM512-DVI</span>
         <p>Reflective 512x512 SLM featuring a High Efficiency dielectric mirror and DVI controller.</p>
@@ -335,7 +489,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim ulr">
       <div class="card-content">
         <span class="card-title">P512-P8</span>
         <p>Reflective 512x512 SLM featuring a 8-bit controller.</p>
@@ -357,7 +511,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim ulr">
       <div class="card-content">
         <span class="card-title">P512-P16</span>
         <p>Reflective 512x512 SLM featuring a PCIe 16-bit controller.</p>
@@ -379,7 +533,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm twodim ulr">
       <div class="card-content">
         <span class="card-title">P512-DVI</span>
         <p>Reflective 512x512 SLM featuring a DVI controller.</p>
@@ -401,7 +555,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm onedim eff8 hs">
       <div class="card-content">
         <span class="card-title">HSP12K-P16</span>
         <p>Reflective 1x12,288 SLM featuring High Speed liquid crystal and a P16 controller.</p>
@@ -423,7 +577,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm onedim eff8 eff9 hs">
       <div class="card-content">
         <span class="card-title">HSPDM12K-P16</span>
         <p>Reflective 1x12,288 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and a P16 controller.</p>
@@ -445,7 +599,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm onedim eff8 eff9 ulr">
       <div class="card-content">
         <span class="card-title">PDM12K-P16</span>
         <p>Reflective 1x12,288 SLM featuring a High Efficiency dielectric mirror and a P16 controller.</p>
@@ -467,7 +621,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm rslm onedim eff8 ulr">
       <div class="card-content">
         <span class="card-title">P12K-P16</span>
         <p>Reflective 1x12,288 SLM featuring a P16 controller.</p>
@@ -480,7 +634,7 @@
               <i class="material-icons">call_missed</i><p>80%</p>
             </div>
             <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>1.6 microns</p>
+              <i class="material-icons">dehaze</i><p>1.6 microns</p>
             </div>
             <div class="col s3 m3 l3">
               <i class="material-icons">aspect_ratio</i><p>19.66 x 19.66 mm</p>
@@ -489,7 +643,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm tslm onedim eff8 eff9">
       <div class="card-content">
         <span class="card-title">1x128</span>
         <p>Transmissive 1x128 SLM featuring phase, amplitude or combined modulation and a USB controller.</p>
@@ -502,7 +656,7 @@
               <i class="material-icons">import_export</i><p>85 - 92%</p>
             </div>
             <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>100 microns</p>
+              <i class="material-icons">dehaze</i><p>100 microns</p>
             </div>
             <div class="col s3 m3 l3">
               <i class="material-icons">aspect_ratio</i><p>12.80 x 5.00 mm</p>
@@ -511,7 +665,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm tslm onedim eff8 eff9">
       <div class="card-content">
         <span class="card-title">1x640</span>
         <p>Transmissive 1x640 SLM featuring phase, amplitude or combined modulation and a USB controller.</p>
@@ -524,7 +678,7 @@
               <i class="material-icons">import_export</i><p>85 - 92%</p>
             </div>
             <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>100 microns</p>
+              <i class="material-icons">dehaze</i><p>100 microns</p>
             </div>
             <div class="col s3 m3 l3">
               <i class="material-icons">aspect_ratio</i><p>64.00 x 5.00 mm</p>
@@ -533,7 +687,7 @@
         </div>
       </div>
     </div>
-    <div class="card hoverable">
+    <div class="card hoverable slm tslm twodim eff8 eff9">
       <div class="card-content">
         <span class="card-title">Hex</span>
         <p>Transmissive 127 hexagonal pixel SLM featuring a USB controller.</p>
