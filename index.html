@@ -99,6 +99,13 @@
       cards.fadeIn();
       $("#nav-mobile li a").show();
     });
+    $("#clear").click(function(){
+      slm_filter = '';
+      $(".breadcrumb").hide();
+      $("#bcall").fadeIn();
+      cards.fadeIn();
+      $("#nav-mobile li a").show();
+    });
   });
   </script>
   
@@ -169,6 +176,7 @@
           </li>
       </ul>
     </li>
+    <li><a href="#!" id="clear">Clear All Selections</a></li>
   </ul>
   </div>
 </nav>
