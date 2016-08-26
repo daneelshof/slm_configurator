@@ -19,6 +19,10 @@
       $("#bcrslm").fadeIn();
       $("#reflective").hide();
       $("#transmissive").hide();
+      $("#usb").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
     });
     $("#transmissive").click(function(){
       slm_filter = slm_filter.concat('.tslm');
@@ -27,6 +31,18 @@
       $("#bctslm").fadeIn();
       $("#reflective").hide();
       $("#transmissive").hide();
+      $("#dvi").hide();
+      $("#hdmi").hide();
+      $("#pcie").hide();
+      $("#eightbit").hide();
+      $("#sixteenbit").hide();
+      $("#hs").hide();
+      $("#uhs").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#512").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
     });
     $("#onedim").click(function(){
       slm_filter = slm_filter.concat('.onedim');
@@ -35,6 +51,15 @@
       $("#bconedim").fadeIn();
       $("#onedim").hide();
       $("#twodim").hide();
+      $("#uhs").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+      $("#1920").hide();
+      $("#512").hide();
+      $("#127").hide();
+      $("#eightbit").hide();
+      $("#dvi").hide();
+      $("#hdmi").hide();
     });
     $("#twodim").click(function(){
       slm_filter = slm_filter.concat('.twodim');
@@ -52,6 +77,7 @@
       $("#hs").hide();
       $("#uhs").hide();
       $("#ulr").hide();
+      $("#twelvebit").hide();
       $("#transmissive").hide();
     });
     $("#uhs").click(function(){
@@ -62,8 +88,10 @@
       $("#hs").hide();
       $("#uhs").hide();
       $("#ulr").hide();
+      $("#twelvebit").hide();
       $("#onedim").hide();
       $("#transmissive").hide();
+      $("#12288").hide();
     });
     $("#eff8").click(function(){
       slm_filter = slm_filter.concat('.eff8');
@@ -73,6 +101,7 @@
       $("#transmissive").hide();
       $("#eff8").hide();
       $("#eff9").hide();
+      $("#eff10").hide();
     });
     $("#eff9").click(function(){
       slm_filter = slm_filter.concat('.eff9');
@@ -82,15 +111,275 @@
       $("#transmissive").hide();
       $("#eff8").hide();
       $("#eff9").hide();
+      $("#eff10").hide();
     });
-    $("#ulr").click(function(){
-      slm_filter = slm_filter.concat('.ulr');
+    $("#eff10").click(function(){
+      slm_filter = slm_filter.concat('.eff10');
       cards.hide();
       cards.filter(slm_filter).fadeIn();
-      $("#bculpr").fadeIn();
+      $("#bceff10").fadeIn();
       $("#transmissive").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+      $("#eff10").hide();
+    });
+    $("#eightbit").click(function(){
+      slm_filter = slm_filter.concat('.eightbit');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bceightbit").fadeIn();
+      $("#transmissive").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#usb").hide();
+      $("#dvi").hide();
+      $("#hdmi").hide();
+      $("#onedim").hide();
+      $("#eightbit").hide();
+      $("#twelvebit").hide();
+      $("#sixteenbit").hide();
+    });
+    $("#twelvebit").click(function(){
+      slm_filter = slm_filter.concat('.twelvebit');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bctwelvebit").fadeIn();
+      $("#512").hide();
+      $("#pcie").hide();
+      $("#dvi").hide();
       $("#hs").hide();
       $("#uhs").hide();
+      $("#eightbit").hide();
+      $("#twelvebit").hide();
+      $("#sixteenbit").hide();
+    });
+    $("#sixteenbit").click(function(){
+      slm_filter = slm_filter.concat('.sixteenbit');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bcsixteenbit").fadeIn();
+      $("#transmissive").hide();
+      $("#1920").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#usb").hide();
+      $("#hdmi").hide();
+      $("#uhs").hide();
+      $("#eightbit").hide();
+      $("#twelvebit").hide();
+      $("#sixteenbit").hide();
+    });
+    $("#1920").click(function(){
+      slm_filter = slm_filter.concat('.1920');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bc1920").fadeIn();
+      $("#onedim").hide();
+      $("#transmissive").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#512").hide();
+      $("#pcie").hide();
+      $("#dvi").hide();
+      $("#hs").hide();
+      $("#uhs").hide();
+      $("#usb").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+      $("#eightbit").hide();
+      $("#sixteenbit").hide();
+    });
+    $("#512").click(function(){
+      slm_filter = slm_filter.concat('.512');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bc512").fadeIn();
+      $("#onedim").hide();
+      $("#transmissive").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#512").hide();
+      $("#hdmi").hide();
+      $("#usb").hide();
+      $("#twelvebit").hide();
+    });
+    $("#12288").click(function(){
+      slm_filter = slm_filter.concat('.12288');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bc12288").fadeIn();
+      $("#twodim").hide();
+      $("#transmissive").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#512").hide();
+      $("#hdmi").hide();
+      $("#usb").hide();
+      $("#dvi").hide();
+      $("#uhs").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+      $("#eightbit").hide();
+      $("#twelvebit").hide();
+    });
+    $("#127").click(function(){
+      slm_filter = slm_filter.concat('.127');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bc127").fadeIn();
+      $("#twodim").hide();
+      $("#reflective").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#512").hide();
+      $("#hdmi").hide();
+      $("#pcie").hide();
+      $("#dvi").hide();
+      $("#uhs").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+      $("#eightbit").hide();
+      $("#sixteenbit").hide();
+    });
+    $("#128").click(function(){
+      slm_filter = slm_filter.concat('.128');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bc128").fadeIn();
+      $("#twodim").hide();
+      $("#reflective").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#512").hide();
+      $("#hdmi").hide();
+      $("#pcie").hide();
+      $("#dvi").hide();
+      $("#uhs").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+      $("#eightbit").hide();
+      $("#sixteenbit").hide();
+    });
+    $("#640").click(function(){
+      slm_filter = slm_filter.concat('.640');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bc640").fadeIn();
+      $("#twodim").hide();
+      $("#reflective").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#512").hide();
+      $("#hdmi").hide();
+      $("#pcie").hide();
+      $("#dvi").hide();
+      $("#uhs").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+      $("#eightbit").hide();
+      $("#sixteenbit").hide();
+    });
+    $("#usb").click(function(){
+      slm_filter = slm_filter.concat('.usb');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bcusb").fadeIn();
+      $("#twodim").hide();
+      $("#reflective").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#512").hide();
+      $("#hdmi").hide();
+      $("#pcie").hide();
+      $("#dvi").hide();
+      $("#usb").hide();
+      $("#hs").hide();
+      $("#uhs").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+      $("#eightbit").hide();
+      $("#sixteenbit").hide();
+    });
+    $("#dvi").click(function(){
+      slm_filter = slm_filter.concat('.dvi');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bcdvi").fadeIn();
+      $("#onedim").hide();
+      $("#transmissive").hide();
+      $("#1920").hide();
+      $("#12288").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#hdmi").hide();
+      $("#pcie").hide();
+      $("#dvi").hide();
+      $("#usb").hide();
+      $("#uhs").hide();
+      $("#eightbit").hide();
+      $("#twelvebit").hide();
+    });
+    $("#hdmi").click(function(){
+      slm_filter = slm_filter.concat('.hdmi');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bchdmi").fadeIn();
+      $("#onedim").hide();
+      $("#transmissive").hide();
+      $("#512").hide();
+      $("#12288").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#hdmi").hide();
+      $("#pcie").hide();
+      $("#dvi").hide();
+      $("#usb").hide();
+      $("#hs").hide();
+      $("#uhs").hide();
+      $("#eff8").hide();
+      $("#eff9").hide();
+      $("#eightbit").hide();
+      $("#sixteenbit").hide();
+    });
+    $("#pcie").click(function(){
+      slm_filter = slm_filter.concat('.pcie');
+      cards.hide();
+      cards.filter(slm_filter).fadeIn();
+      $("#bcpcie").fadeIn();
+      $("#transmissive").hide();
+      $("#1920").hide();
+      $("#127").hide();
+      $("#128").hide();
+      $("#640").hide();
+      $("#hdmi").hide();
+      $("#pcie").hide();
+      $("#dvi").hide();
+      $("#usb").hide();
+      $("#twelvebit").hide();
     });
     $("#bcall").click(function(){
       slm_filter = '';
@@ -154,11 +443,12 @@
     <li>
       <ul class="collapsible collapsible-accordion">
           <li>
-            <a class="collapsible-header waves-effect waves-red">Efficiency<i class="material-icons">call_missed</i></a>
+            <a class="collapsible-header waves-effect waves-red">Fill Factor<i class="material-icons">apps</i></a>
             <div class="collapsible-body">
               <ul>
                 <li><a href="#!" id="eff8">> 80%</a></li>
-                <li><a href="#!" id="eff9">> 90%</a></li>
+                <li><a href="#!" id="eff9">> 85%</a></li>
+                <li><a href="#!" id="eff10">> 95%</a></li>
               </ul>
             </div>
           </li>
@@ -167,10 +457,44 @@
     <li>
       <ul class="collapsible collapsible-accordion">
           <li>
-            <a class="collapsible-header waves-effect waves-red">Phase Stability<i class="material-icons">show_chart</i></a>
+            <a class="collapsible-header waves-effect waves-red">Resolution<i class="material-icons">grid_on</i></a>
             <div class="collapsible-body">
               <ul>
-                <li><a href="#!" id="ulr">Ultra Low Phase Ripple</a></li>
+                <li><a href="#!" id="1920">1920 x 1152</a></li>
+                <li><a href="#!" id="512">512 x 512</a></li>
+                <li><a href="#!" id="12288">1 x 12288</a></li>
+                <li><a href="#!" id="127">Hex 127</a></li>
+                <li><a href="#!" id="128">1 x 128</a></li>
+                <li><a href="#!" id="640">1 x 640</a></li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header waves-effect waves-red">DAC Bit Depth<i class="material-icons">line_style</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!" id="eightbit">8-bit</a></li>
+                <li><a href="#!" id="twelvebit">12-bit</a></li>
+                <li><a href="#!" id="sixteenbit">16-bit</a></li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header waves-effect waves-red">PC Interface<i class="material-icons">desktop_windows</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!" id="usb">USB</a></li>
+                <li><a href="#!" id="dvi">DVI</a></li>
+                <li><a href="#!" id="hdmi">HDMI</a></li>
+                <li><a href="#!" id="pcie">PCIe</a></li>
               </ul>
             </div>
           </li>
@@ -200,10 +524,22 @@
     <a href="#!" class="breadcrumb" id="bchspd">High Speed</a>
     <a href="#!" class="breadcrumb" id="bcuhspd">Ultra High Speed</a>
     <a href="#!" class="breadcrumb" id="bcstdeff">Standard Efficiency</a>
-    <a href="#!" class="breadcrumb" id="bceff8">Efficiency > 80%</a>
-    <a href="#!" class="breadcrumb" id="bceff9">Efficiency > 90%</a>
-    <a href="#!" class="breadcrumb" id="bclpr">Low Phase Ripple</a>
-    <a href="#!" class="breadcrumb" id="bculpr">Ultra Low Phase Ripple</a>
+    <a href="#!" class="breadcrumb" id="bceff8">Fill Factor > 80%</a>
+    <a href="#!" class="breadcrumb" id="bceff9">Fill Factor > 85%</a>
+    <a href="#!" class="breadcrumb" id="bceff10">Fill Factor > 95%</a>
+    <a href="#!" class="breadcrumb" id="bceightbit">8-bit DAC</a>
+    <a href="#!" class="breadcrumb" id="bctwelvebit">12-bit DAC</a>
+    <a href="#!" class="breadcrumb" id="bcsixteenbit">16-bit DAC</a>
+    <a href="#!" class="breadcrumb" id="bcusb">USB</a>
+    <a href="#!" class="breadcrumb" id="bcdvi">DVI</a>
+    <a href="#!" class="breadcrumb" id="bcpcie">PCIe</a>
+    <a href="#!" class="breadcrumb" id="bchdmi">HDMI</a>
+    <a href="#!" class="breadcrumb" id="bc1920">1920 x 1152</a>
+    <a href="#!" class="breadcrumb" id="bc512">512 x 512</a>
+    <a href="#!" class="breadcrumb" id="bc12288">1 x 12288</a>
+    <a href="#!" class="breadcrumb" id="bc127">Hex 127</a>
+    <a href="#!" class="breadcrumb" id="bc128">1 x 128</a>
+    <a href="#!" class="breadcrumb" id="bc640">1 x 640</a>
   </div>
   </div>
 </div>
@@ -211,507 +547,668 @@
 
 <div class="row" id="slm-list">
   <div class="col s12 m12 l12">
-    <div class="card hoverable slm rslm eff8 twodim">
+    <div class="card hoverable slm rslm eff8 eff9 eff10 twodim twelvebit hdmi 1920">
       <div class="card-content">
         <span class="card-title">P1920-HDMI</span>
         <p>Reflective 1920x1152 SLM featuring high fill factor and HDMI controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>30 - 100 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>88%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>95.7%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>9.2 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>1920 x 1152</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>17.66 x 10.60 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>12-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>HDMI</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm eff8 twodim hs">
+    <div class="card hoverable slm rslm eff8 eff9 eff10 twodim hs sixteenbit dvi 512">
       <div class="card-content">
         <span class="card-title">HSP512L-DVI</span>
         <p>Reflective 512x512 large area SLM featuring High Speed liquid crystal and High Speed DVI controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>2 - 15 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>88%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>96.0%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>25 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>12.80 x 12.80 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>DVI</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim eff8 ulr">
+    <div class="card hoverable slm rslm twodim eff8 eff9 eff10 ulr sixteenbit dvi 512">
       <div class="card-content">
         <span class="card-title">P512L-DVI</span>
         <p>Reflective 512x512 large area SLM featuring a DVI controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 400nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>2 - 15 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>88%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>96.0%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>25 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>12.80 x 12.80 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>DVI</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim uhs">
+    <div class="card hoverable slm rslm twodim uhs eff8 eightbit pcie 512">
       <div class="card-content">
         <span class="card-title">ODP512-P8</span>
         <p>Reflective 512x512 SLM featuring OverDrive Plus, High Speed liquid crystal and PCIe 8-bit controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>1.5 - 7 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>83.4%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>8-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x4</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim hs">
+    <div class="card hoverable slm rslm twodim hs eff8 eightbit pcie 512">
       <div class="card-content">
         <span class="card-title">HSP512-P8</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal and PCIe 8-bit controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>83.4%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>8-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x4</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim hs">
+    <div class="card hoverable slm rslm twodim hs eff8 sixteenbit pcie 512">
       <div class="card-content">
         <span class="card-title">HSP512-P16</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal and PCIe 16-bit controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>83.4%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x8</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim hs">
+    <div class="card hoverable slm rslm twodim hs eff8 sixteenbit dvi 512">
       <div class="card-content">
         <span class="card-title">HSP512-DVI</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal and High Speed DVI controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>83.4%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>DVI</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim eff8 eff9 hs">
+    <div class="card hoverable slm rslm twodim eff8 eff9 eff10 hs eightbit pcie 512">
       <div class="card-content">
         <span class="card-title">HSPDM512-P8</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and PCIe 8-bit controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>8-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x4</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim eff8 eff9 hs">
+    <div class="card hoverable slm rslm twodim eff8 eff9 eff10 hs sixteenbit pcie 512">
       <div class="card-content">
         <span class="card-title">HSPDM512-P16</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and PCIe 16-bit controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x8</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim eff8 eff9 hs">
+    <div class="card hoverable slm rslm twodim eff8 eff9 eff10 hs sixteenbit dvi 512">
       <div class="card-content">
         <span class="card-title">HSPDM512-DVI</span>
         <p>Reflective 512x512 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and High Speed DVI controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 15 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>DVI</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim eff8 eff9 ulr">
+    <div class="card hoverable slm rslm twodim eff8 eff9 eff10 ulr eightbit pcie 512">
       <div class="card-content">
         <span class="card-title">PDM512-P8</span>
         <p>Reflective 512x512 SLM featuring a High Efficiency dielectric mirror and PCIe 8-bit controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 400nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>8-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x4</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim eff8 eff9 ulr">
+    <div class="card hoverable slm rslm twodim eff8 eff9 eff10 ulr sixteenbit pcie 512">
       <div class="card-content">
         <span class="card-title">PDM512-P16</span>
         <p>Reflective 512x512 SLM featuring a High Efficiency dielectric mirror and PCIe 16-bit controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 400nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x8</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim eff8 eff9 ulr">
+    <div class="card hoverable slm rslm twodim eff8 eff9 eff10 ulr sixteenbit dvi 512">
       <div class="card-content">
         <span class="card-title">PDM512-DVI</span>
         <p>Reflective 512x512 SLM featuring a High Efficiency dielectric mirror and DVI controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 400nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5 - 95%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>DVI</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim ulr">
+    <div class="card hoverable slm rslm twodim ulr eff8 eightbit pcie 512">
       <div class="card-content">
         <span class="card-title">P512-P8</span>
         <p>Reflective 512x512 SLM featuring a 8-bit controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 400nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>83.4%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>8-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x4</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim ulr">
+    <div class="card hoverable slm rslm twodim ulr eff8 sixteenbit pcie 512">
       <div class="card-content">
         <span class="card-title">P512-P16</span>
         <p>Reflective 512x512 SLM featuring a PCIe 16-bit controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 400nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>83.4%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x8</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm twodim ulr">
+    <div class="card hoverable slm rslm twodim ulr eff8 sixteenbit dvi 512">
       <div class="card-content">
         <span class="card-title">P512-DVI</span>
         <p>Reflective 512x512 SLM featuring a DVI controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 400nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>30 - 130 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>61.5%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>83.4%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>15 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>512 x 512</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>7.68 x 7.68 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>DVI</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm onedim eff8 hs">
+    <div class="card hoverable slm rslm onedim eff8 eff9 eff10 hs sixteenbit pcie 12288">
       <div class="card-content">
         <span class="card-title">HSP12K-P16</span>
         <p>Reflective 1x12,288 SLM featuring High Speed liquid crystal and a P16 controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 30 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>80%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>1.6 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>1 x 12288</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>19.66 x 19.66 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x8</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm onedim eff8 eff9 hs">
+    <div class="card hoverable slm rslm onedim eff8 eff9 eff10 hs sixteenbit pcie 12288">
       <div class="card-content">
         <span class="card-title">HSPDM12K-P16</span>
         <p>Reflective 1x12,288 SLM featuring High Speed liquid crystal, a High Efficiency dielectric mirror and a P16 controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 488nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 30 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>80 - 95%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>1.6 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>1 x 12288</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>19.66 x 19.66 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x8</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm onedim eff8 eff9 ulr">
+    <div class="card hoverable slm rslm onedim eff8 eff9 eff10 sixteenbit pcie 12288">
       <div class="card-content">
         <span class="card-title">PDM12K-P16</span>
         <p>Reflective 1x12,288 SLM featuring a High Efficiency dielectric mirror and a P16 controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 400nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 30 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>80 - 95%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>1.6 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>1 x 12288</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>19.66 x 19.66 mm</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x8</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm rslm onedim eff8 ulr">
+    <div class="card hoverable slm rslm onedim eff8 eff9 eff10 sixteenbit pcie 12288">
       <div class="card-content">
         <span class="card-title">P12K-P16</span>
         <p>Reflective 1x12,288 SLM featuring a P16 controller.</p>
+        <p>Available in standard designs for wavelengths 532, 635, 785, 1064 and 1550nm and custom designs for wavelengths from 400nm to SWIR.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>5 - 30 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">call_missed</i><p>80%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>100%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">dehaze</i><p>1.6 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>1 x 12288</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>19.66 x 19.66 mm</p>
             </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>16-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>PCIe 1.1 x8</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm tslm onedim eff8 eff9">
+    <div class="card hoverable slm tslm onedim eff8 eff9 eff10 twelvebit usb 128">
       <div class="card-content">
-        <span class="card-title">1x128</span>
-        <p>Transmissive 1x128 SLM featuring phase, amplitude or combined modulation and a USB controller.</p>
+        <span class="card-title">CRi 1x128</span>
+        <p>Transmissive 1x128 SLM featuring phase, amplitude or combined dual-mask modulation and a USB controller.</p>
+        <p>Available in standard designs for 488 - 900nm (VN model) and 900 - 1620 nm (NM model).</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>35- 70 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">import_export</i><p>85 - 92%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>98%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">dehaze</i><p>100 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>1 x 128</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>12.80 x 5.00 mm</p>
             </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>12-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>USB</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm tslm onedim eff8 eff9">
+    <div class="card hoverable slm tslm onedim eff8 eff9 eff10 twelvebit usb 640">
       <div class="card-content">
-        <span class="card-title">1x640</span>
-        <p>Transmissive 1x640 SLM featuring phase, amplitude or combined modulation and a USB controller.</p>
+        <span class="card-title">CRi 1x640</span>
+        <p>Transmissive 1x640 SLM featuring phase, amplitude or combined dual-mask modulation and a USB controller.</p>
+        <p>Available in standard designs for 488 - 900nm (VN model) and 900 - 1620 nm (NM model).</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>35- 70 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">import_export</i><p>85 - 92%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>98%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">dehaze</i><p>100 microns</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>1 x 640</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>64.00 x 5.00 mm</p>
             </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>12-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>USB</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card hoverable slm tslm twodim eff8 eff9">
+    <div class="card hoverable slm tslm twodim eff8 eff9 eff10 usb twelvebit 127">
       <div class="card-content">
-        <span class="card-title">Hex</span>
+        <span class="card-title">Hex 127</span>
         <p>Transmissive 127 hexagonal pixel SLM featuring a USB controller.</p>
+        <p>Available in designs for center wavelengths from 450 - 1800 nm.</p>
         <div class="card-action">
           <div class="row">
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">timelapse</i><p>35- 70 ms</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">import_export</i><p>>90%</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">apps</i><p>>98%</p>
             </div>
-            <div class="col s3 m3 l3">
-              <i class="material-icons">grid_on</i><p>1 millimeter</p>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">grid_on</i><p>127 hexagonal</p>
             </div>
-            <div class="col s3 m3 l3">
+            <div class="col s2 m2 l2">
               <i class="material-icons">aspect_ratio</i><p>12.00 mm diameter</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">line_style</i><p>12-bit</p>
+            </div>
+            <div class="col s2 m2 l2">
+              <i class="material-icons">desktop_windows</i><p>USB</p>
             </div>
           </div>
         </div>
